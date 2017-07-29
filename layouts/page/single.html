@@ -53,7 +53,7 @@
 
   <article class="post {{ .Section }}">
     <header class="post-header">
-      <nav class="breadcrumb">
+      <!-- <nav class="breadcrumb">
         {{ $currentNode := . }}
         {{ range .Site.Menus.main }}
         {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .)}}
@@ -74,8 +74,7 @@
               {{end}}
         {{end}}
         {{end}}
-        <!-- <li>{{.Title}}</li> -->
-      </nav>
+      </nav> -->
 
 
         <h1 class="post-title">{{.Title}}</h1>
