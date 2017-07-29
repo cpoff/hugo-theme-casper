@@ -4,16 +4,16 @@
 {{$authorbio := or .Params.authorbio .Site.Params.authorbio }}
 {{$authorlocation := or .Params.authorlocation .Site.Params.authorlocation }}
 {{$authorwebsite := or .Params.authorwebsite .Site.Params.authorwebsite }}
-{{$authoravatar := or .Params.authoravatar .Site.Params.logo }}
+{{$authoravatar := or .Params.authoravatar .Site.Params.authoravatar }}
 
 {{with $authoravatar}}
 <figure class="author-image">
-    <a class="img" href="{{$.Site.BaseURL}}" style="background-image: url({{. | relURL}})"><span class="hidden">{{$authorname}}'s Picture</span></a>
+    <a class="img" href="{{ "about" | absURL }}" style="background-image: url({{. | absURL}})"><span class="hidden">{{$authorname}}'s Picture</span></a>
 </figure>
 {{end}}
 
 <section class="author">
-  <h4><a href="{{.Site.BaseURL}}">{{$authorname}}</a></h4>
+  <h4><a href="{{ "about" | absURL }}">{{$authorname}}</a></h4>
   {{if $authorbio}}
   <p>{{$authorbio}}</p>
   {{else}}
