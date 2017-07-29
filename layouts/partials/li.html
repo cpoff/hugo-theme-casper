@@ -17,7 +17,9 @@
             {{$authoravatar := or .Params.authoravatar .Site.Params.authoravatar }}
 
             {{with $authoravatar}}
-            <img class="author-thumb" src="{{ $authoravatar| relURL  }}" alt="Author image" nopin="nopin" />
+            <a href="{{ "about" | absURL }}">
+              <img class="author-thumb" src="{{ $authoravatar| relURL  }}" alt="Author image" nopin="nopin" />
+            </a>
             {{end}}
 
             {{with $authorname}}
