@@ -25,7 +25,7 @@
             {{end}}
         {{end}}
 
-        {{if .Params.categories }}on
+        {{if .Params.categories }}in
           {{ $categories := .Params.categories }}
           {{ range $index, $category := .Params.categories }}
             <a href="{{$.Site.BaseURL}}/categories/{{ $category | urlize }}/">{{ $category }}</a>{{ if lt (add $index 1) (len $categories) }},{{ end }}
