@@ -1089,6 +1089,7 @@ body:not(.post-template) .post-title {
     text-transform: uppercase;
     font-size: 1.3rem;
     white-space: nowrap;
+    margin: 0 0 20px 0; /* Added by David */
 }
 
 .user-image {
