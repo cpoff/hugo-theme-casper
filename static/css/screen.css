@@ -418,7 +418,7 @@ pre {
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
-    background: #F7FAFB;
+    background: #F8F8F8; /* Changed by David */
     border-radius: 3px;
 }
 
@@ -1089,6 +1089,11 @@ body:not(.post-template) .post-title {
     text-transform: uppercase;
     font-size: 1.3rem;
     white-space: nowrap;
+}
+
+/* Added by David */
+.post-header > .post-meta > .post-date {
+    margin: 0 0 20px 0;
 }
 
 .user-image {
