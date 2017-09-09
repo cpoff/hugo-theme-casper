@@ -2153,6 +2153,14 @@ body:not(.post-template) .post-title {
     font-family: Inconsolata, monospace, sans-serif;
 }
 
+.archive-list li a {
+    text-decoration: none;
+}
+
+.archive-list li a:hover {
+    text-decoration: underline;
+}
+
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
