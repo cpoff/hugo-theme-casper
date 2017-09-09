@@ -44,7 +44,7 @@
 <main class="content" role="main">
     <div class="inner">
         {{ range (.Site.RegularPages.GroupByDate "2006") }}
-            <h3>{{ .Key }}</h3>
+            <h3 class="archive-year">{{ .Key }}</h3>
 
             <ul class="archive-list">
                 {{ range (where .Pages "Type" "post") }}
